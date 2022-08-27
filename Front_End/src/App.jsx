@@ -8,8 +8,6 @@ import Signin from "./components/pages/Signin";
 function App() {
   return (
     <div className="App">
-        <h1> TechNova Shelter</h1>
-
       <Router>
         <Navbar />
         <Routes>
