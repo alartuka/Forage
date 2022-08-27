@@ -9,8 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/login', (req, res) => {
     res.sendFile(__dirname + '/loginpage/login.html'); //change routing to login page
-  });
-
+});
 
 const Storedusername = process.env.username
 const Storedpassword = process.env.password
@@ -29,7 +28,6 @@ app.post('/login', (req, res) => {
 });
 
 //save password in .env variable 
-
 
 app.listen(port, () => {
     console.log('this is the start of our food shelter api on port 3000');
