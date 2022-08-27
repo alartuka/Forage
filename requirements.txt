@@ -1,0 +1,6 @@
+transformers
+timm
+fastapi
+uvicorn
+python-dotenv
+flask
