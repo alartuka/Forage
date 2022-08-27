@@ -1,2 +1,2 @@
 # Technova_Frontend
-Collaborators: Maisha Thasin 
+Collaborators: Maisha Thasin, Lauralee Gookool
