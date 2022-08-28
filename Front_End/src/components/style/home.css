@@ -1,18 +1,30 @@
 .home_header {
-    background-color: rgb(225, 182, 125);
+    background-color: #ffbaa3;
     position: relative;
     height: 44rem;
     width: 100%;
     text-align: center;
     color: white;
     font-size: x-large;
+   
+}
+
+.home_name {
+    background-color: blue;
+    border-radius: 2.3rem;
+    width: 60%;
+    text-align: center;
+    margin-left: 20%
 }
 
 .home_header h1 {
     font-weight: bold;
-    font-size: 32 px;
+    font-size: 88pt;
+    padding: 0.5rem 10rem;
 }
 
 .home_header h3 {
     font-weight: bold;
+    font-size: 32pt;
+    padding: 3rem 10rem;
 }
