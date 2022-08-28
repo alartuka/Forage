@@ -1,8 +1,9 @@
-import { Container, Typography, Grid, Box, Button } from '@mui/material';
+import { Container, Typography, Grid, Box, Button, Card, CardMedia } from '@mui/material';
 import React from 'react'
 import { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import "../style/Stocks.css";
+import data from "../assets/stocks_data";
 
 function Stocks() {
     const [file, setFile] = useState();
@@ -14,88 +15,118 @@ function Stocks() {
     return (
         <section id="stocks">
             <Container className='stocks_section'>
+                <Box >
 
-                <Container className='stocks_header'>
-                    {/* PROFILE TAG HERE...??!
-                    <br />
-                    STOCKS NAV Bar HERE...??! */}
-                </Container>
+                    <Grid>
+                        <Container className='stock_buttons'>
+                            <Grid container spacing={3}>
+                                <Grid item>
+                                    <Button className='bttn'
+                                        size="medium" variant="contained" >
+                                        Add
+                                    </Button>
+                                </Grid>
+                                <Grid item>
+                                    <Button className='bttn'
+                                        size="medium" variant="contained" >
+                                        Delete
+                                    </Button>
+                                </Grid>
+                            </Grid>
+                        </Container>
+                        <Container className='ustocks_container'>
+                            <table>
+                                <tr>
+                                    <th>Product Category</th>
+                                    <th>Product Name</th>
+                                    <th>Product Count</th>
+                                </tr>
 
-                {/* MUI GRID !!! */}
-                <Box sx={{ flexGrow: 10 }}>
-                    <Grid cointainer
-                        alignItems="center"
-                        className="stocks_container"
-                    >
-                        <Grid item xs={10} spacing={3}>
+                                {data.map((val, id) => {
+                                    return (
+                                        <tr key={id}>
+                                            <td>{val.category}</td>
+                                            <td>{val.name}</td>
+                                            <td>{val.count}</td>
+
+                                        </tr>
+                                    )
+                                })}
+                            </table>
+                        </Container>
+                    </Grid>
+
+                    <Grid cointainer className="stocks_container">
+
+                        <Grid>
                             <div className='add_stock'>
-                                <Typography variant="h3">
-                                    ADD STOCKS
-                                </Typography>
+                                <Typography variant="h3">ADD STOCKS</Typography>
                                 <Container className='add_form'>
                                     <Box
                                         component="form"
                                         sx={{
-                                            '& .MuiTextField-root': { m: 1, width: '25ch' },
+                                            '& .MuiTextField-root': { m: 1.2, width: '25ch' },
                                         }}
                                         noValidate
                                         autoComplete="off"
                                     >
-                                        <TextField
-                                            required
-                                            id="outlined-required"
-                                            label="Product Name"
-                                            // defaultValue="Product Name"
-                                        />
-                                        <TextField
-                                            required
-                                            id="outlined-required"
-                                            label="Product Category"
-                                            // defaultValue="Product Category"
-                                        />
-                                        <TextField
-                                            required
-                                            id="outlined-number"
-                                            label="Product Count"
-                                            type="number"
-                                            InputLabelProps={{
-                                                shrink: true,
-                                            }}
-                                        />
-                                        {/* <form className='add_stock_form'>
-                                    <label>PRODUCT NAME</label>
-                                    <input type='text' />
-                                    <br />
-                                    <label>PRODUCT CATEGORY</label>
-                                    <input type='text' />
-                                    <label>PRODUCT COUNT</label>
-                                    <input type="text" />
-                                    </form> */}
+                                        <Container className='add_container'>
+                                            <Grid>
+                                                <TextField
+                                                    required
+                                                    id="outlined-required"
+                                                    label="Product Name"
+                                                />
+                                                <TextField
+                                                    required
+                                                    id="outlined-required"
+                                                    label="Product Category"
+                                                />
+                                            </Grid>
+                                            <Grid>
+                                                <TextField
+                                                    required
+                                                    id="outlined-number"
+                                                    label="Product Count"
+                                                    type="number"
+                                                    InputLabelProps={{
+                                                        shrink: true,
+                                                    }}
+                                                />
+                                            </Grid>
+                                        </Container>
                                     </Box>
                                 </Container>
-
-
-                                <Button className='add_button' size="medium" variant="contained" href="#add-stock">
-                                    Confirm
+                                <Button className='bttn' size="large" variant="contained" href="#add-stock">
+                                    Submit
                                 </Button>
-
                             </div>
                         </Grid>
 
 
-                        <Grid item xs={10} spacing={3}>
+                        <Grid >
                             <div className='upload_stock'>
                                 <Typography variant="h3">
                                     UPLOAD STOCK
                                 </Typography>
-                                <Container className='uplaod_img'>
-                                    <input type="file" onChange={handleChange} />
-                                    <img src={file} />
+                                <Container className='upload_section'>
+                                    <Container className='upload_container'>
+                                        <Typography variant='h6'>
+                                            Upload stock image
+                                        </Typography>
+                                        <img className='preview_img' src={file} />
+                                    </Container>
+                                    <Button className='bttn' size="large" variant="contained" component="label">
+                                        Upload
+                                        <input hidden accept="image/*" multiple type="file"
+                                            onChange={handleChange} />
+                                    </Button>
                                 </Container>
                             </div>
                         </Grid>
 
                     </Grid>
+
                 </Box>
             </Container>
         </section>

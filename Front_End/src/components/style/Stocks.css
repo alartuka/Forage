@@ -1,5 +1,6 @@
-.stocks {
-    display: flex;
+.stocks_section {
+    margin: 5.5%;
+    text-align: center;
 }
 
 .stocks_container {
@@ -7,9 +8,25 @@
     flex-direction: row;
     grid-auto-rows: auto;
     grid-template-columns: repeat(2, 1fr);
-    padding: 0.5rem;
     position: relative;
     grid-gap: 1rem;
+    align-items: center;
+}
+
+.stock_buttons {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    flex-direction: row;
+    position: relative;
+    grid-gap: 1.8rem;
+    align-items: center;
+    text-align: left;
+    margin-top: 10%;
+    padding: 1rem 1rem;
+}
+
+.bttn {
+    margin-top: 3%
 }
 
 .add_stock {
@@ -21,16 +38,39 @@
 
 .add_stock h3 {
     margin: 4%;
-    text-align: center;
+}
+
+.add_container {
+    padding: 1rem 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 5%;
 }
 
 .upload_stock {
+    margin-top: 8%;
     background-color: #FEDCD1;
     padding: 1.5rem 1.5rem;
     border-radius: 1.5rem;
 }
 
-.add_button {
-    /* padding: 2rem 2.3rem; */
-    margin-top: 3%
+.upload_stock h3 {
+    margin: 4%;
+}
+
+.upload_container {
+    margin: 5%;
+    height: 3%;
+    width: 4%;
+    padding: 7.3rem 8rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
+}
+
+.upload_container h6 {
+    color: rgba(84, 84, 84, 0.305);
+}
+
+.img_placeholder {
+   object-fit: fill;
+    width: 50%;
 }

@@ -12,10 +12,14 @@
 .singin_form {
     padding: 3.5rem 2.5rem;
     width: fit-content;
-    background-color: #FEDCD1;
-    margin-left: 38%;
-    display: flex;
+    /* background-color: #FEDCD1; */
+    margin-left: 31%;
+    display: grid;
     grid-template-columns: (1, 1fr);
+    margin-bottom: 4.8%;
+}
 
+.add_button {
+    padding: 0.5rem 0.5rem;
 }
 

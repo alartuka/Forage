@@ -1,0 +1,43 @@
+.signin_container {
+  margin-top: 2%;
+  text-align: right;
+  padding-left: 0.6rem;
+}
+
+.signin_container body1 {
+  margin:5%;
+}
+
+.ustocks_header {
+    margin-top: 9%;
+    text-align: center;
+}
+
+.ustocks_container {
+ padding: 1.5rem 1.5rem;
+ margin: 2%;
+ background-color: antiquewhite;
+ width: fit-content;
+ /* align-items: center;
+ align-content: center;
+ align-self: center; */
+}
+
+table {
+    border: 2px solid #a23612;
+    width: 60rem;
+    height: 20rem;
+    margin-left: 8%;
+    border-radius: 1.3rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+    
+th {
+    border-bottom: 2px solid #fa6af0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  }
+    
+td {
+    text-align: center;
+  }

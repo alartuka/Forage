@@ -1,7 +1,7 @@
 import React from 'react'
 import '../style/Signin.css';
 import TextField from '@mui/material/TextField';
-import { Button, Box, Card, Container, Typography, CardActionArea } from '@mui/material';
+import { Button, Grid, Box, Card, Container, Typography, CardActionArea } from '@mui/material';
 
 function Signin() {
     return (
@@ -16,25 +16,37 @@ function Signin() {
                         <Box
                             component="form"
                             sx={{
-                                '& .MuiTextField-root': { m: 1, width: '25ch' },
+                                '& .MuiTextField-root': { m: 3.5, width: '43ch' },
                             }}
                             noValidate
                             autoComplete="off"
                         >
-                            <div>
-                                <TextField
-                                    required
-                                    className='text_field'
-                                    id="outlined-password-input"
-                                    label="Password"
-                                    type="password"
-                                    autoComplete="current-password"
 
-                                />
-                                <br />
-                                <Button className='add_button' size="medium" color="primary" variant="outlined" href="#sign-in">
-                                    Sign in
-                                </Button>
+                            <div>
+                                <Grid>
+                                    <TextField
+                                        required
+                                        id="outlined-username"
+                                        label="Username"
+                                    />
+                                </Grid>
+
+                                <Grid>
+                                    <TextField
+                                        required
+                                        id="outlined-password-input"
+                                        label="Password"
+                                        type="password"
+                                        autoComplete="current-password"
+
+                                    />
+                                </Grid>
+
+                                <Container className='add_button'>
+                                    <Button size="large" color="secondary" variant="outlined" href="#sign-in">
+                                        Sign in
+                                    </Button>
+                                </Container>
                             </div>
                         </Box>
                     </CardActionArea>
