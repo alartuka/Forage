@@ -1,4 +1,4 @@
-import { Button, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import React from 'react';
 import '../style/about.css';
 
@@ -14,4 +14,4 @@ function About() {
   )
 }
 
-export default About
+export default About;
