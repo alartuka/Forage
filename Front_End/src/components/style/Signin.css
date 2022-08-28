@@ -1,0 +1,21 @@
+.signin_section {
+    background-color: #98cfff70;
+    padding: 2.5rem 2.5rem;
+    
+}
+
+.signin_section h1 {
+    text-align: center;
+    padding-bottom: 2.5rem;
+}
+
+.singin_form {
+    padding: 3.5rem 2.5rem;
+    width: fit-content;
+    background-color: #FEDCD1;
+    margin-left: 38%;
+    display: flex;
+    grid-template-columns: (1, 1fr);
+
+}
+

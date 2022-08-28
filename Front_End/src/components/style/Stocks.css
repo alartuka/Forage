@@ -1,0 +1,36 @@
+.stocks {
+    display: flex;
+}
+
+.stocks_container {
+    display: grid;
+    flex-direction: row;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.5rem;
+    position: relative;
+    grid-gap: 1rem;
+}
+
+.add_stock {
+    margin-top: 8%;
+    background-color: #FEDCD1;
+    padding: 1.5rem 1.5rem;
+    border-radius: 1.5rem;
+}
+
+.add_stock h3 {
+    margin: 4%;
+    text-align: center;
+}
+
+.upload_stock {
+    background-color: #FEDCD1;
+    padding: 1.5rem 1.5rem;
+    border-radius: 1.5rem;
+}
+
+.add_button {
+    /* padding: 2rem 2.3rem; */
+    margin-top: 3%
+}
