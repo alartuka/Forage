@@ -13,8 +13,8 @@ function Navbar() {
         <Container className='rightSide' >
             <Link to="/"> Home </Link>
             <Link to="/About"> About </Link>
-            <Link to="/Stocks"> Stocks </Link>
-            <Link to="/UStocks"> UStocks</Link>
+            {/* <Link to="/Stocks"> Stocks </Link> */}
+            <Link to="/UStocks"> Inventory</Link>
             {/* <Link to="/Signin"> Sign in</Link> */}
             
         </Container>

@@ -17,7 +17,7 @@ function UStocks() {
                     </Button>
                 </Container>
                 <Typography variant="h3">
-                    ADD TITLE and DESCRIPTION OF PAGE !!
+                    Inventory
                 </Typography>
 
             </Container>
