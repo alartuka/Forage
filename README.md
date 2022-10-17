@@ -45,9 +45,6 @@ Not only will this prevent storage uncertainties and food wastage, it will also 
 #### Back-End: ML
 [Back-End](https://user-images.githubusercontent.com/80016785/196266284-913eb82d-c44e-4161-be48-91eab6766d9a.mov)
 
-
-<br />
-<br />
 <hr />
 
 ### *More information can be found on [Devpost](https://devpost.com/software/forage-7qkx8s)*
