@@ -1,7 +1,7 @@
 # Forage 🤲
 ### *For food banks, the clever way 🙂* 
 
-``` Collaborators: Maisha Thasin, Lauralee Gookool, Tuka Alarbi, Maham Meher ```
+``` Collaborators: Maisha Thasin, Lauralee Gookool, Tuka A, Maham Meher ```
 
 || *TechNova 2022 Hackathon Submission* 
 
